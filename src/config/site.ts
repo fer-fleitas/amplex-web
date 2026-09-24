@@ -1,4 +1,22 @@
 /**
+ * URL pública del sitio. Usa NEXT_PUBLIC_SITE_URL si está definida; si no, la URL de
+ * producción que Vercel asigna automáticamente; y como último recurso un valor por defecto.
+ * Tolera valores vacíos o sin "https://".
+ */
+function resolveSiteUrl() {
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+    process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim() ||
+    "www.amplextech.com";
+  const withProtocol = raw.startsWith("http://") || raw.startsWith("https://") ? raw : `https://${raw}`;
+  try {
+    return new URL(withProtocol).origin;
+  } catch {
+    return "https://www.amplextech.com";
+  }
+}
+
+/**
  * Configuración central del sitio. Editá estos valores para personalizar
  * datos de contacto, redes sociales y metadatos sin tocar los componentes.
  */
@@ -8,7 +26,7 @@ export const siteConfig = {
   slogan: "Tecnología que impulsa tu futuro.",
   description:
     "Desarrollo web, software a medida, automatización de procesos, integración de sistemas y consultoría tecnológica para empresas que quieren innovar y crecer.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.amplextech.com",
+  url: resolveSiteUrl(),
   locale: "es_PY",
   keywords: [
     "desarrollo web",
