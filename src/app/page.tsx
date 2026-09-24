@@ -9,6 +9,9 @@ import { Portfolio } from "@/components/sections/Portfolio";
 import { Technologies } from "@/components/sections/Technologies";
 import { Faq } from "@/components/sections/Faq";
 import { Contact } from "@/components/sections/Contact";
+import { Marquee } from "@/components/effects/Marquee";
+import { SpotlightTracker } from "@/components/effects/SpotlightTracker";
+import { services } from "@/data/content";
 
 export default function HomePage() {
   return (
@@ -16,6 +19,7 @@ export default function HomePage() {
       <Header />
       <main id="contenido">
         <Hero />
+        <Marquee items={services.map((s) => s.title)} />
         <About />
         <Services />
         <Process />
@@ -26,6 +30,7 @@ export default function HomePage() {
         <Technologies />
       </main>
       <Footer />
+      <SpotlightTracker />
     </>
   );
 }
