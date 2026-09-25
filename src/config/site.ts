@@ -7,12 +7,12 @@ function resolveSiteUrl() {
   const raw =
     process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
     process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim() ||
-    "www.amplextech.com";
+    "www.nandutek.com";
   const withProtocol = raw.startsWith("http://") || raw.startsWith("https://") ? raw : `https://${raw}`;
   try {
     return new URL(withProtocol).origin;
   } catch {
-    return "https://www.amplextech.com";
+    return "https://www.nandutek.com";
   }
 }
 
@@ -21,8 +21,8 @@ function resolveSiteUrl() {
  * datos de contacto, redes sociales y metadatos sin tocar los componentes.
  */
 export const siteConfig = {
-  name: "AMPLEX TECH SOLUTIONS",
-  shortName: "AMPLEX",
+  name: "Ñandutek",
+  shortName: "Ñandutek",
   slogan: "Tecnología que impulsa tu futuro.",
   description:
     "Desarrollo web, software a medida, automatización de procesos, integración de sistemas y consultoría tecnológica para empresas que quieren innovar y crecer.",
@@ -35,22 +35,22 @@ export const siteConfig = {
     "automatización de procesos",
     "integración de sistemas",
     "consultoría tecnológica",
-    "AMPLEX TECH SOLUTIONS",
+    "Ñandutek",
   ],
   contact: {
-    email: "contacto@amplextech.com",
+    email: "contacto@nandutek.com",
     phone: "+595 985 542 379",
     // Número en formato internacional sin "+", espacios ni guiones.
     whatsapp: "595985542379",
-    whatsappMessage: "Hola AMPLEX, quiero consultar por un proyecto.",
+    whatsappMessage: "Hola Ñandutek, quiero consultar por un proyecto.",
     location: "Paraguay",
     hours: "Lun a Vie · 9:00 a 18:00",
   },
   // Dejá una URL vacía ("") para ocultar la red correspondiente.
   social: {
-    linkedin: "https://www.linkedin.com/company/amplex-tech-solutions",
-    github: "https://github.com/amplex-tech",
-    instagram: "https://www.instagram.com/amplextech",
+    linkedin: "https://www.linkedin.com/company/nandutek",
+    github: "https://github.com/nandutek",
+    instagram: "https://www.instagram.com/nandutek",
     x: "",
     facebook: "",
   },

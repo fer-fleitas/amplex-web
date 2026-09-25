@@ -42,7 +42,7 @@ async function sendEmail(data: ContactPayload) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: process.env.CONTACT_FROM_EMAIL || "AMPLEX Web <onboarding@resend.dev>",
+      from: process.env.CONTACT_FROM_EMAIL || "Ñandutek Web <onboarding@resend.dev>",
       to: process.env.CONTACT_TO_EMAIL!.split(",").map((s) => s.trim()),
       reply_to: data.email,
       subject: `Nueva consulta: ${data.service || "Proyecto"} — ${data.name}`,

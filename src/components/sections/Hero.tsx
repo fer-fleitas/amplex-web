@@ -50,7 +50,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease }}
             className="mx-auto mt-6 max-w-xl text-base leading-relaxed lg:mx-0 lg:text-[1.02rem]"
           >
-            En <strong className="font-semibold text-white">AMPLEX TECH SOLUTIONS</strong> desarrollamos experiencias
+            En <strong className="font-semibold text-white">Ñandutek</strong> desarrollamos experiencias
             digitales, software a medida y soluciones tecnológicas que ayudan a las empresas a innovar, crecer y
             optimizar sus procesos.
           </motion.p>

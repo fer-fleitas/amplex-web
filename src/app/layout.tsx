@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Plus_Jakarta_Sans } from "next/font/google";
+import { Exo_2, Plus_Jakarta_Sans } from "next/font/google";
 import { siteConfig } from "@/config/site";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import "./globals.css";
@@ -11,10 +11,10 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const montserrat = Montserrat({
+const exo = Exo_2({
   subsets: ["latin"],
-  weight: ["600", "800"],
-  variable: "--font-montserrat",
+  weight: ["600"],
+  variable: "--font-exo",
   display: "swap",
 });
 
@@ -57,7 +57,7 @@ const jsonLd = {
   name: siteConfig.name,
   slogan: siteConfig.slogan,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/icon.svg`,
+  logo: `${siteConfig.url}/icon.png`,
   email: siteConfig.contact.email,
   telephone: siteConfig.contact.phone,
   description: siteConfig.description,
@@ -67,7 +67,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${jakarta.variable} ${montserrat.variable}`} data-scroll-behavior="smooth">
+    <html lang="es" className={`${jakarta.variable} ${exo.variable}`} data-scroll-behavior="smooth">
       <body>
         <a
           href="#contenido"

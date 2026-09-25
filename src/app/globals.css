@@ -17,7 +17,7 @@
   --color-line-strong: rgb(40 120 255 / 0.35);
 
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-logo: var(--font-montserrat), var(--font-jakarta), sans-serif;
+  --font-logo: var(--font-exo), var(--font-jakarta), sans-serif;
   --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, monospace;
 
   --animate-float: float 6s ease-in-out infinite;

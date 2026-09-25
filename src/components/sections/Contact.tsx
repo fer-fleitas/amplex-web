@@ -114,7 +114,7 @@ export function Contact() {
   };
 
   const waMessage = [
-    `Hola AMPLEX, soy ${data.name || "…"}${data.company ? ` de ${data.company}` : ""}.`,
+    `Hola Ñandutek, soy ${data.name || "…"}${data.company ? ` de ${data.company}` : ""}.`,
     data.service && `Me interesa: ${data.service}.`,
     data.message,
   ]

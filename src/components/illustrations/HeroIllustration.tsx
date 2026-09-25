@@ -12,7 +12,7 @@ const C = {
 };
 
 const codeLines: Tok[][] = [
-  [[C.kw, "import"], [C.txt, " { Solution } "], [C.kw, "from"], [C.str, " '@amplex/core'"]],
+  [[C.kw, "import"], [C.txt, " { Solution } "], [C.kw, "from"], [C.str, " '@nandutek/core'"]],
   [],
   [[C.kw, "const"], [C.txt, " project "], [C.pun, "= "], [C.kw, "new"], [C.fn, " Solution"], [C.pun, "({"]],
   [[C.prop, "  client"], [C.pun, ": "], [C.str, "'tu-empresa'"], [C.pun, ","]],

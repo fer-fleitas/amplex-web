@@ -33,7 +33,7 @@ export function Footer() {
       <div className="glow-line absolute inset-x-0 top-0 h-px" aria-hidden />
       <div className="container-x grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr_1.3fr]">
         <div>
-          <a href="#inicio" aria-label="AMPLEX TECH SOLUTIONS — volver al inicio" className="inline-block">
+          <a href="#inicio" aria-label="Ñandutek — volver al inicio" className="inline-block">
             <Logo />
           </a>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
@@ -110,7 +110,7 @@ export function Footer() {
 
       <div className="border-t border-line">
         <div className="container-x flex flex-col items-center justify-between gap-3 py-6 text-xs text-mist-dim sm:flex-row">
-          <p>© {new Date().getFullYear()} AMPLEX TECH SOLUTIONS. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Ñandutek. Todos los derechos reservados.</p>
           <p>{siteConfig.slogan}</p>
         </div>
       </div>

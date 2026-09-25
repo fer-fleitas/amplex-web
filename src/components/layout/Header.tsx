@@ -43,8 +43,8 @@ export function Header() {
       }`}
     >
       <div className="container-x flex h-18 items-center justify-between gap-6">
-        <a href="#inicio" aria-label="AMPLEX TECH SOLUTIONS — Inicio" className="shrink-0">
-          <Logo />
+        <a href="#inicio" aria-label="Ñandutek — Inicio" className="shrink-0">
+          <Logo priority />
         </a>
 
         <nav aria-label="Navegación principal" className="hidden lg:block">

@@ -24,7 +24,7 @@ export function About() {
             Tecnología hecha a la medida <span className="text-gradient">de tu negocio.</span>
           </h2>
           <p className="mt-6 leading-relaxed">
-            <strong className="font-semibold text-white">AMPLEX TECH SOLUTIONS</strong> es una empresa de tecnología
+            <strong className="font-semibold text-white">Ñandutek</strong> es una empresa de tecnología
             dedicada a diseñar, desarrollar e implementar soluciones digitales para organizaciones que buscan dar el
             siguiente paso. Combinamos visión estratégica, diseño y desarrollo de software para convertir procesos
             complejos en herramientas simples, eficientes y escalables.

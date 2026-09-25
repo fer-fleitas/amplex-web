@@ -20,7 +20,7 @@ const Bar = ({ w, className = "" }: { w: string; className?: string }) => (
 
 function Shop() {
   return (
-    <BrowserFrame url="demo-tienda.amplex.dev">
+    <BrowserFrame url="demo-tienda.nandutek.dev">
       <div className="mb-3 flex items-center justify-between">
         <Bar w="30%" className="bg-white/70" />
         <span className="rounded bg-electric px-1.5 py-0.5 text-[8px] font-bold text-white">🛒 3</span>
@@ -43,7 +43,7 @@ function Shop() {
 
 function Erp() {
   return (
-    <BrowserFrame url="demo-gestion.amplex.dev">
+    <BrowserFrame url="demo-gestion.nandutek.dev">
       <div className="flex h-full gap-2">
         <div className="w-1/5 space-y-1.5 rounded bg-navy-800 p-1.5">
           <div className="h-1.5 rounded bg-electric" />
@@ -77,7 +77,7 @@ function Erp() {
 
 function Corporate() {
   return (
-    <BrowserFrame url="demo-corporativo.amplex.dev">
+    <BrowserFrame url="demo-corporativo.nandutek.dev">
       <div className="mb-2 flex items-center justify-between">
         <span className="h-2 w-8 rounded bg-electric" />
         <div className="flex gap-1.5">
@@ -106,7 +106,7 @@ function Corporate() {
 
 function Dashboard() {
   return (
-    <BrowserFrame url="demo-dashboard.amplex.dev">
+    <BrowserFrame url="demo-dashboard.nandutek.dev">
       <div className="grid h-full grid-cols-3 gap-2">
         <div className="col-span-2 rounded border border-line bg-navy-800 p-2">
           <p className="text-[7px] text-mist-dim">Ingresos mensuales</p>
