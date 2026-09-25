@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Montserrat, Plus_Jakarta_Sans } from "next/font/google";
 import { siteConfig } from "@/config/site";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import "./globals.css";
@@ -8,6 +8,13 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-jakarta",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["600", "800"],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -60,7 +67,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={jakarta.variable} data-scroll-behavior="smooth">
+    <html lang="es" className={`${jakarta.variable} ${montserrat.variable}`} data-scroll-behavior="smooth">
       <body>
         <a
           href="#contenido"

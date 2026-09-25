@@ -23,7 +23,7 @@ export function WhyIllustration() {
 
       {/* Isotipo central */}
       <div className="absolute top-1/2 left-1/2 flex h-36 w-36 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-line-strong bg-gradient-to-br from-navy-700 to-navy-900 shadow-[0_0_60px_-10px_#2878ff,inset_0_1px_0_rgb(255_255_255/0.08)]">
-        <LogoMark className="h-20 w-20" />
+        <LogoMark className="h-20 w-24 text-white" />
       </div>
 
       {/* Panel de código */}

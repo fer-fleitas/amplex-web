@@ -22,14 +22,15 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <svg width="80" height="80" viewBox="0 0 40 40">
-            <polygon points="17,3 23.5,3 38,36 31.5,36" fill="#2878ff" />
-            <polygon points="2,36 17,3 23.5,3 9,36" fill="#ffffff" />
-            <polygon points="14.3,24 26.2,24 28,28 12.5,28" fill="#38c6ff" />
+          <svg width="110" height="90" viewBox="0 0 113 92" fill="none">
+            <polygon points="7,86 43,8 95,86 82,86 55,64 26,86" stroke="#ffffff" strokeWidth="9" strokeLinejoin="miter" />
+            <path d="M36 60 H46 C53 60 54 51 61 51 H101" stroke="#2878ff" strokeWidth="4.5" strokeLinecap="round" />
+            <circle cx="31" cy="60" r="5" stroke="#38c6ff" strokeWidth="3.5" />
+            <circle cx="106" cy="51" r="5" stroke="#38c6ff" strokeWidth="3.5" />
           </svg>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 44, fontWeight: 800, letterSpacing: 6 }}>AMPLEX</span>
-            <span style={{ fontSize: 20, letterSpacing: 10, color: "#5a9bff" }}>TECH SOLUTIONS</span>
+            <span style={{ fontSize: 56, fontWeight: 800, letterSpacing: 2 }}>AMPLEX</span>
+            <span style={{ fontSize: 18, letterSpacing: 3, color: "#5a9bff" }}>FUTURE-READY SOLUTIONS</span>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", marginTop: 60, fontSize: 64, fontWeight: 800, lineHeight: 1.1 }}>

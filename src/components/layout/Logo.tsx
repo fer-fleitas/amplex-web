@@ -1,31 +1,41 @@
-
-/** Isotipo geométrico basado en la letra A. */
-export function LogoMark({ className = "h-9 w-9" }: { className?: string }) {
+/**
+ * Isotipo AMPLEX: una "A" de trazo grueso con base en chevrón y una pista de circuito
+ * que la atraviesa y termina en un nodo fuera de la letra.
+ */
+export function LogoMark({ className = "h-10 w-12" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden fill="none">
-      <defs>
-        <linearGradient id="amplex-logo-g" x1="17" y1="3" x2="38" y2="36" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#5a9bff" />
-          <stop offset="1" stopColor="#1c5fd6" />
-        </linearGradient>
-      </defs>
-      <polygon points="17,3 23.5,3 38,36 31.5,36" fill="url(#amplex-logo-g)" />
-      <polygon points="2,36 17,3 23.5,3 9,36" fill="#ffffff" />
-      <polygon points="14.3,24 26.2,24 28,28 12.5,28" fill="#38c6ff" />
-      <circle cx="33.5" cy="7.5" r="2.2" fill="#2878ff" />
+    <svg viewBox="0 0 113 92" className={className} aria-hidden fill="none">
+      {/* Letra A */}
+      <polygon
+        points="7,86 43,8 95,86 82,86 55,64 26,86"
+        stroke="currentColor"
+        strokeWidth="9"
+        strokeLinejoin="miter"
+        strokeMiterlimit="10"
+      />
+      {/* Pista de circuito */}
+      <path
+        d="M36 60 H46 C53 60 54 51 61 51 H101"
+        stroke="#2878ff"
+        strokeWidth="4.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="31" cy="60" r="5" stroke="#38c6ff" strokeWidth="3.5" />
+      <circle cx="106" cy="51" r="5" stroke="#38c6ff" strokeWidth="3.5" />
     </svg>
   );
 }
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
-    <span className="flex items-center gap-2.5">
+    <span className="flex items-center gap-2.5 text-white">
       <LogoMark />
       <span className="flex flex-col leading-none">
-        <span className="text-lg font-extrabold tracking-[0.14em] text-white">AMPLEX</span>
+        <span className="font-logo text-[1.6rem] font-extrabold tracking-[0.02em]">AMPLEX</span>
         {!compact && (
-          <span className="mt-1 text-[0.58rem] font-semibold tracking-[0.3em] text-electric-light">
-            TECH SOLUTIONS
+          <span className="font-logo mt-1 text-[0.5rem] font-semibold tracking-[0.06em] whitespace-nowrap text-electric-light">
+            FUTURE-READY SOLUTIONS
           </span>
         )}
       </span>
